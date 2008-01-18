@@ -1,0 +1,65 @@
+ocaml-xml-light
+------------------------------------------
+Xml-Light is a minimal XML parser & printer for OCaml. It provide 
+functions to parse an XML document into an OCaml data structure, work 
+with it, and print it back to an XML document. It support also DTD 
+parsing and checking, and is entirely written in OCaml, hence it does 
+not require additional C library.
+
+Runtime requirements:
+  cygwin-1.5.25-7
+  ocaml-3.10.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://tech.motion-twin.com/xmllight.html
+
+-------------------------------------------
+
+Build instructions:
+  unpack ocaml-xml-light-2.2.20080116-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ocaml-xml-light-2.2.20080116-X.cygport all
+
+This will create:
+  /usr/src/ocaml-xml-light-2.2.20080116-X-src.tar.bz2
+  /usr/src/ocaml-xml-light-2.2.20080116-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ocaml/3.10/xml-light/META
+  /usr/lib/ocaml/3.10/xml-light/dtd.cmi
+  /usr/lib/ocaml/3.10/xml-light/dtd.cmx
+  /usr/lib/ocaml/3.10/xml-light/dtd.mli
+  /usr/lib/ocaml/3.10/xml-light/xml-light.a
+  /usr/lib/ocaml/3.10/xml-light/xml-light.cma
+  /usr/lib/ocaml/3.10/xml-light/xml-light.cmxa
+  /usr/lib/ocaml/3.10/xml-light/xml.cmi
+  /usr/lib/ocaml/3.10/xml-light/xml.cmx
+  /usr/lib/ocaml/3.10/xml-light/xml.mli
+  /usr/lib/ocaml/3.10/xml-light/xmlParser.cmi
+  /usr/lib/ocaml/3.10/xml-light/xmlParser.cmx
+  /usr/lib/ocaml/3.10/xml-light/xmlParser.mli
+  /usr/share/doc/ocaml-xml-light-2.2.20080116/README
+
+------------------
+
+Port Notes:
+
+----- version 2.2.20080116-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
