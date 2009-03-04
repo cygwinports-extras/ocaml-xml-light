@@ -7,16 +7,15 @@ parsing and checking, and is entirely written in OCaml, hence it does
 not require additional C library.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  ocaml-3.10.0-1
+  cygwin-1.5.25-15
+  ocaml-3.10.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-7
-  binutils-20060817-1
-  cygport-0.3.8-1
+  binutils-20080624-2
+  cygport-0.4.3-1
   gcc-core-3.4.4-3
-  make-3.81-1
+  make-3.81-2
 
 Canonical website:
   http://tech.motion-twin.com/xmllight.html
@@ -56,6 +55,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.2.20080116-2 -----
+Rebuilt.
 
 ----- version 2.2.20080116-1 -----
 Initial release for Cygwin.
