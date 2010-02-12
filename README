@@ -7,14 +7,15 @@ parsing and checking, and is entirely written in OCaml, hence it does
 not require additional C library.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  ocaml-3.10.2-1
+  cygwin-1.7.1-1
+  ocaml-3.11.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  gcc4-core-4.3.4-3
+  flexdll-0.20-1
   make-3.81-2
 
 Canonical website:
@@ -23,43 +24,21 @@ Canonical website:
 -------------------------------------------
 
 Build instructions:
-  unpack ocaml-xml-light-2.2.20080116-X-src.tar.bz2
+  unpack ocaml-xml-light-2.2.20070208-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ocaml-xml-light-2.2.20080116-X.cygport all
+  cygport ./ocaml-xml-light-2.2.20070208-X.cygport all
 
 This will create:
-  /usr/src/ocaml-xml-light-2.2.20080116-X-src.tar.bz2
-  /usr/src/ocaml-xml-light-2.2.20080116-X.tar.bz2
+  /usr/src/ocaml-xml-light-2.2.20070208-X-src.tar.bz2
+  /usr/src/ocaml-xml-light-2.2.20070208-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/ocaml/3.10/xml-light/META
-  /usr/lib/ocaml/3.10/xml-light/dtd.cmi
-  /usr/lib/ocaml/3.10/xml-light/dtd.cmx
-  /usr/lib/ocaml/3.10/xml-light/dtd.mli
-  /usr/lib/ocaml/3.10/xml-light/xml-light.a
-  /usr/lib/ocaml/3.10/xml-light/xml-light.cma
-  /usr/lib/ocaml/3.10/xml-light/xml-light.cmxa
-  /usr/lib/ocaml/3.10/xml-light/xml.cmi
-  /usr/lib/ocaml/3.10/xml-light/xml.cmx
-  /usr/lib/ocaml/3.10/xml-light/xml.mli
-  /usr/lib/ocaml/3.10/xml-light/xmlParser.cmi
-  /usr/lib/ocaml/3.10/xml-light/xmlParser.cmx
-  /usr/lib/ocaml/3.10/xml-light/xmlParser.mli
-  /usr/share/doc/ocaml-xml-light-2.2.20080116/README
-
-------------------
-
 Port Notes:
 
------ version 2.2.20080116-2 -----
-Rebuilt.
-
------ version 2.2.20080116-1 -----
+----- version 2.2.20070208-1 -----
 Initial release for Cygwin.
 
 
