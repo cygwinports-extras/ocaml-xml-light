@@ -7,15 +7,15 @@ parsing and checking, and is entirely written in OCaml, hence it does
 not require additional C library.
 
 Runtime requirements:
-  cygwin-1.7.1-1
-  ocaml-3.11.2-1
+  cygwin-1.7.7-1
+  ocaml-base-3.12.0-4
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-2.19.51-1
-  cygport-0.9.80-1
-  gcc4-core-4.3.4-3
-  flexdll-0.20-1
+  binutils-2.20.51-2
+  cygport-0.10.0-1
+  gcc4-core-4.5.0-1
+  flexdll-0.25-1
   make-3.81-2
 
 Canonical website:
@@ -37,6 +37,9 @@ This will create:
 -------------------------------------------
 
 Port Notes:
+
+----- version 2.2.20070208-3 -----
+Rebuilt for ocaml-3.12.0.
 
 ----- version 2.2.20070208-2 -----
 Rebuilt for ocaml-3.11.2.

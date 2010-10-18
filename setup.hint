@@ -1,5 +1,5 @@
 category: OCaml
-requires: ocaml
+requires: ocaml-base
 sdesc: "OCaml minimal XML parser"
 ldesc: "Xml-Light is a minimal XML parser & printer for OCaml. It 
 provide functions to parse an XML document into an OCaml data structure, 
