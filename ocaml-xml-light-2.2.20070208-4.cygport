@@ -20,5 +20,5 @@ src_install() {
 	insinto ${OCAML_LIBDIR}/xml-light
 	doins META
 
-	ocaml_install INSTALLDIR=${D}${OCAML_LIBDIR}/xml-light
+	ocaml_install INSTALLDIR=${D}${OCAML_LIBDIR}
 }
