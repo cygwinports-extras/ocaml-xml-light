@@ -1,0 +1,29 @@
+SVN_URI="http://ocamllibs.googlecode.com/svn/trunk/xml-light"
+SVN_BRANCH=/
+SVN_DATE=$((PV[3] + 1))
+
+inherit ocaml svn
+
+CATEGORY="OCaml"
+SUMMARY="OCaml minimal XML parser"
+DESCRIPTION="Xml-Light is a minimal XML parser & printer for OCaml. It provides
+functions to parse an XML document into an OCaml data structure, work with it,
+and print it back to an XML document. It support also DTD parsing and checking,
+and is entirely written in OCaml, hence it does not require additional C library."
+HOMEPAGE="http://code.google.com/p/ocamllibs/"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake -j1 all opt
+
+	sed -e "s/\@VERSION\@/${PV}/" META.in > META
+}
+
+src_install() {
+	cd ${B}
+	insinto ${OCAML_LIBDIR}/xml-light
+	doins META
+
+	ocaml_install INSTALLDIR=${D}${OCAML_LIBDIR}
+}
