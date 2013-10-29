@@ -5,7 +5,7 @@ inherit ocaml svn
 
 NAME="ocaml-xml-light"
 VERSION=2.2.20120820
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="OCaml minimal XML parser"
 DESCRIPTION="Xml-Light is a minimal XML parser and printer for OCaml. It
